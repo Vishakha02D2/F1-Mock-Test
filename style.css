@@ -1,146 +1,65 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Inter' ,sans-serif;
-}
 body{
-  background-color: rgb(17, 14, 14);
-  border: 2px solid rgb(212, 147, 147);
+  padding: 0;
+  margin: 20px;
+  background-color: black;
+  color:black;
+  /* font-size: 20px; */
+  font-family: 'Inter', sans-serif;
 }
 
+/* navbar starts here */
 
 
+nav{
 
-
-.rightStreet{
-  background-color: antiquewhite;
-  width: 35%;
-  padding: 5px;
-  margin: 5px;
-  border-radius: 15px;
-}
-.leftStreet{
-  width: 65%;
-}
-.theimage{
-  background-color: grey;
-  border-radius: 15px;
-  margin: 15px;
-  padding: 10px;
-  
-}
-.upright{
-  background-color: grey;
-  height: 25vh;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
-  border-radius: 15px;
-  margin: 15px;
-  padding: 10px;
+  border: 2px solid #8F8868;
+  padding:2px;
+  border-radius:30px ;
+
 }
-.downleft{
-  background-color: rgb(132, 94, 94);
-  overflow: hidden;
-  border-radius: 15px;
+button{
+  padding: 20px 50px;
+  border-radius: 30px;
+  background-color:#1A1C19;
+  color: white;
   margin: 5px;
-  padding: 10px;
+  border:1px solid #8F8868;
 
 
 }
-.phot{
-  width: 300px;
-}
-.downright{
-   overflow: hidden;
-  border-radius: 15px;
-  margin: 5px;
-  padding: 10px;
-  background-color: rgb(150, 129, 129);
-  height: 52vh;
 
-}
-.material{
-  display: flex;
-  height: 100vh;
-  justify-content: space-around;
-}
-.below{
-  display: flex;
-  height: 50%;
-}
-.downleft{
-  height: 52vh;
-}
-.fistImage{
-  width: 25rem;
-  border-radius: 15px;
-  padding: 10px;
-  
-}
-.last{
-  display: flex;
-  justify-content: space-between;
-}
-.snip{
-  border: 1px solid black;
-  border-radius: 15px;
-  padding: 3px;
-  
-}
-.firstImage{
-overflow: hidden;
-}
-.last{
-  padding: 15px;
-}
-.twoimg{
+.fbtn{
   width: 400px;
-  height: 150px;
-  padding: 10px;
-  padding-left: 30px;
-}
-.img2{
-  border-radius: 50%;
-  height: 100px;
-  margin-left: 250px;
+  background-color: #343124;
+  
 }
 
 
+/* ends here */
 
-@media only screen and (max-width: 600px) {
-  .material {
-  flex-direction: column;
-  height: auto;
-  }
-  .phot{
-      width: 300px;
-  }
+
+
+
+/* main container */
+
+
+.container{
+  /* border: 2px solid red; */
+  background-color: black;
+  padding: 5px;
+  margin-top: 15px;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 5fr,1fr,1fr);
+  gap: 15px;
   
-  .rightStreet {
-  width: 100%;
-  }
-  
-  .leftStreet {
-  width: 100%;
-  }
-  
-  .phot {
-  width: 100%;
-  }
-  
-  .twoimg {
-  width: 100%;
-  height: auto;
-  padding-left: 0;
-  }
-  
-  .img2 {
-  margin-left: 0;
-  margin-right: auto;
-  }
-  }
+}
+
+.container div{
+  border-radius: 25px;
+}
 
 
 
@@ -149,89 +68,215 @@ overflow: hidden;
 
 
 
+.gr1 p{
+  padding: 10px 20px;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 20px;
 
-  .navbar {
-      color: antiquewhite;
-      display: flex;
-      justify-content: space-between;
-      border: 2px white solid;
-      border-radius: 15px;
-      padding: 10px;
-      padding-left: 1px;
-      padding-right: 1px;
-      margin: 5px;
-    }
-    
-    .iems {
-      border: 1px solid white;
-      border-radius: 15px;
-      padding: 6px;
-      padding-left: 25px;
-      padding-right: 25px;
-      margin: 1px;
-    }
-    
-    #items {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
-    
-    #menu{
-      display: none;
-    }
-    
-    @media only screen and (max-width: 600px) {
+}
 
 
 
-      .iems {
-        display: none;
-        
-      }
-      #items{
-          display: block;
-          float: left;
-      }
-    
-      .left {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    
-      #menu {
-        display: block;
-        float: right;
-        margin-left: 7rem;
-      }
-    
-      .hidden {
-        display: none;
-      }
-    
-      .left.show {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-      }
-    
-      .left.show .iems {
-        display: block;
-      }
-    
-      .left.show #menu {
-        display: none;
-      }
-    
-      .right.show {
-        display: flex;
-        width: 100%;
-      }
-    
-      .right.show .iems {
-        display: block;
-      }
-    }
-    
 
+/* main container of cards */
+
+.gr1{
+  padding: 20px;
+  background-color: #E0D6C2;
+  grid-row: 1/3;
+  align-content: center;
+  padding
  
+}
+
+.gr2{
+
+  
+  padding: 10px;
+  background-color: #8F8868;
+  grid-column: 2/4;
+  
+  
+}
+.gr3{
+  padding: 10px;
+  background-color: #976C54;
+  
+}
+.gr4{
+  padding: 20px;
+  background-color: #B5A38D;
+
+}
+
+/* it ends here */
+
+
+
+
+/* only images style */
+
+
+.gr1 img{
+  width: 100%;
+  height: 100%;
+  transition: all 2s;
+  
+}
+.gr2 img{
+  width: 100%;
+  height: 1000%;
+  transition: all 2s;
+
+  
+}
+.gr3 .gr3imgcont img{
+  width: 100%;
+  height: 100%;
+  transition: all 2s;
+  
+
+}
+.gr4 img{
+  width: 100%;
+  transition: all 2s;
+
+}
+
+/* image styling ends */
+
+
+
+/*  only get and arrow  */
+.get{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.get span{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+/* ends heer */
+
+
+
+
+
+
+.man{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+
+.gr2imgcont{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;padding: 10px;
+  
+
+
+}
+
+.gr3imgcont{
+  padding: 10px;
+}
+
+.gr4imgcont{
+  padding: 10px;
+}
+
+
+
+.container .gr1:hover img{
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.container .gr2:hover img{
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.container .gr3imgcont:hover img{
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.container .gr4:hover img{
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+
+
+
+
+/* responsive */
+
+
+@media (max-width: 1125px){
+
+  nav .coll{
+     display: none;
+  }
+
+}
+@media (max-width: 950px){
+  .eve{
+      display: none;
+  }
+}
+
+@media (max-width: 800px){
+  .right{
+      display: none;
+  }
+}
+
+
+@media (max-width: 500px){
+  .fbtn{
+      height: auto;
+      width: auto;
+      
+  }
+}
+@media (max-width:600px){
+  .fbtn{
+      height: auto;
+      width: auto;
+      
+  }
+}
+
+
+
+@media(max-width:710px){
+  
+  .container{
+      display: flex;
+      flex-direction: column;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
